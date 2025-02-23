@@ -14,7 +14,7 @@ import Products from "./Pages/About";
 import ContactInfo from "./Pages/Contact";
 
 // Product Components
-import ProductList from "./Components/Elements/Product/ProductList";
+import ProductList from "./Components/Elements/Product/ProductLIst";
 import ProductDetails from "./Components/Elements/Product/ProductAbout";
 import AddProductForm from "./Components/Elements/Categery/add/Womenadd";
 
