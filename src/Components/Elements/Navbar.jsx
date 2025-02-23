@@ -35,6 +35,9 @@ export default function Navbar() {
           <Link to="/Categories" className="relative hover:text-red-500 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full">
             Categories
           </Link>
+          <Link to="/shop" className="relative hover:text-red-500 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full">
+            Shop
+          </Link>
           <Link to="/contact" className="relative hover:text-red-500 after:content-[''] after:absolute after:left-0 after:bottom-[-2px] after:w-0 after:h-[2px] after:bg-red-500 after:transition-all after:duration-300 hover:after:w-full">
             Contact
           </Link>
