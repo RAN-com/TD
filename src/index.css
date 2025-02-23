@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+.tracking-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .tracking-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d1d5db;
+    transition: background-color 0.3s ease-in-out;
+    animation: pulse 1.5s infinite;
+  }
+  
+  .circle.active {
+    background-color: #22c55e;
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.8);
+  }
+  
+  .line {
+    width: 50px;
+    height: 4px;
+    background-color: #d1d5db;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s ease-in-out;
+    animation: expandLine 1.5s infinite;
+  }
+  
+  .tracking-step:last-child .line {
+    display: none;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes expandLine {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 50px;
+    }
+  }
+  
